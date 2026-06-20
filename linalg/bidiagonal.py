@@ -1,9 +1,10 @@
-import householder
+from . import householder
 import numpy as np
 
 
 def bidiagonalize(A, compute_u=True, compute_v=True):
-    """Compute the bidiagonalization of matrix A"""
+    """Compute the bidiagonalization of matrix A
+    Reference: Algorithm 5.4.2 Golub & Van Loan"""
     A = np.asarray(A, dtype=np.float64).copy()
 
     m, n = A.shape

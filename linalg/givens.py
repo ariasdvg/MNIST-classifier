@@ -2,6 +2,9 @@ import numpy as np
 
 
 def givens(a, b):
+    """Givens reflexion to zero b
+    Reference: Algorithm 5.1.3 Golub & Van Loan
+    """
     a = np.float64(a)
     b = np.float64(b)
 

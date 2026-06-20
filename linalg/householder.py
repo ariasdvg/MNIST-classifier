@@ -2,7 +2,9 @@ import numpy as np
 
 
 def house(x):
-    """Given vector x, return the Householder reflection"""
+    """Given vector x, return the Householder reflection
+    Reference: Algorithm 5.1.1 - Golub & Van Loan
+    """
     x = np.asarray(x, dtype=np.float64)
     sigma = np.dot(x[1:], x[1:])
     v = np.empty_like(x)
