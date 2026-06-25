@@ -20,7 +20,24 @@ from classifiers.sklearn_ref import SklearnRidgeClassifier
 
 # alpha is ridge regularization strength (lambda). alpha -> 0 approaches
 # ordinary least squares; larger alpha = more regularization.
-ALPHA_VALUES = [0.0, 0.1, 1.0, 10.0, 100.0, 150.0, 200.0, 250.0, 350.0, 500]
+ALPHA_VALUES = [
+    0.0,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    150.0,
+    200.0,
+    250.0,
+    350.0,
+    500.0,
+    600.0,
+    700.0,
+    750.0,
+    800.0,
+    900.0,
+    1000.0,
+]
 RESULTS_DIR = Path("results")
 
 
