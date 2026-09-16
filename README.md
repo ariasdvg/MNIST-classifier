@@ -169,8 +169,8 @@ The Eckart–Young experiment explains why the subspace method works. The relati
 ### Installation
 
 ```bash
-git clone <repo-url>
-cd <repo>
+git clone https://github.com/ariasdvg/MNIST-classifier.git
+cd MNIST-classifier
 
 python3 -m venv .venv
 source .venv/bin/activate
