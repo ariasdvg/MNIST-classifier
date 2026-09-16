@@ -34,8 +34,8 @@ from classifiers.svd_subspace import (
 from linalg.svd import svd as scratch_svd
 
 
-R_VALUES = [1, 2, 5, 10, 15, 20, 30, 50]
-SUBSAMPLE_PER_CLASS = 400
+R_VALUES = [1, 2, 5, 10, 15, 20, 30, 35, 40, 45, 50, 60, 80]
+SUBSAMPLE_PER_CLASS = 1000
 RESULTS_DIR = Path("results")
 
 
