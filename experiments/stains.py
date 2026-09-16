@@ -1,5 +1,12 @@
 import numpy as np
 import warnings
+import sys
+from pathlib import Path
+
+# Put the repo root on sys.path so `python experiments/<script>.py` works
+# as well as `python -m experiments.<script>`.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from data.mnist import load_mnist
 from classifiers.svd_subspace import SVDSubspaceClassifier, numpy_svd_engine
 from linalg.svd import svd as scratch_svd

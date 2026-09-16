@@ -7,7 +7,7 @@ Plain LS has no hyperparameter to sweep, so this:
   3. sweeps alpha on the Ridge reference to show the effect of regularization.
 
 Run from the repo root:
-    python experiments/experiment_ls.py
+    python experiments/experiments_ls.py
 
 Dumps results/ls_sweep.npz.
 """
@@ -16,6 +16,12 @@ import time
 from pathlib import Path
 
 import numpy as np
+
+import sys
+
+# Put the repo root on sys.path so `python experiments/<script>.py` works
+# as well as `python -m experiments.<script>`.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from data.mnist import load_mnist
 from classifiers.mls import MultivariateLSClassifier

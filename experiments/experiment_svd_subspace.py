@@ -26,6 +26,12 @@ from pathlib import Path
 
 import numpy as np
 
+import sys
+
+# Put the repo root on sys.path so `python experiments/<script>.py` works
+# as well as `python -m experiments.<script>`.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from data.mnist import load_mnist
 from classifiers.svd_subspace import (
     SVDSubspaceClassifier,
